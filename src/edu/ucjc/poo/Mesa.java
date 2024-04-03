@@ -1,6 +1,6 @@
 package edu.ucjc.poo;
 
-public class Mesa {
+public class Mesa { 
 	private String color;
 	private double precio;
 	
