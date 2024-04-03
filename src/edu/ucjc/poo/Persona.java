@@ -1,6 +1,6 @@
 package edu.ucjc.poo;
 
-public class Persona {
+public class Persona { 
 	
 	//Variables de instancia
 	private String nombre;
