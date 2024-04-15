@@ -1,0 +1,27 @@
+
+Crear jerarquía de vehículos, en la que existen tres tipos de vehículos: 
+    +coches, motos y bicicletas. 
+Todos los vehículos tienen 
+    + una marca, un modelo y un año de fabricación, 
+    + métodos "acelerar" o "frenar".
+pero cada tipo de vehículo tiene sus propias características adicionales.
+Por ejemplo
+Clase Coche los atributos 
+    + matricula, número de puertas" y tipo de combustible, 
+    + métodos arrancar y parar 
+Clase CocheElectrico
+    + velocidad de carga
+    + método recargar()
+Clase Moto atributos 
+    + matricula, y "cilindrada"
+    + métodos arrancar() y parar ()
+Clase SideCar hereda de moto
+    + tamaño
+    + desmontar()
+Clase "Bicicleta" atributo 
+    + numero de marchas.
+    + método inflarRuedas
+Clase Garaje con 
+    + 2 plazas para Coches, 2 para Biciletas y 2 para Motos 
+    + método aparcar() que metera cada vehiculo en una plaza de su tipo, si se aparca un sidecar y el tamaño es mayor de 100 NO va a poder aparcar
+Clase con main donde se crean los objetos 3 coches 2 bicis y 2 motos y se intentan aparcar todos y las bicis una vez aparcadas se les debe inflar las ruedas

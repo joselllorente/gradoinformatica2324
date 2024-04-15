@@ -27,7 +27,7 @@ public class BandaMusica {
 		banda.iniciarConcierto(instrumentos);
 		
 		//bateria.aporrear();
-		//((Bateria)bateria).aporrear();
+		((Bateria)bateria).aporrear();
 		
 	}
 	
