@@ -37,6 +37,39 @@ public class Garaje {
 			if (vehiculo instanceof VehiculosMotorizados) {
 				VehiculosMotorizados vm = (VehiculosMotorizados)vehiculo;
 				System.out.println("Aparcando vehiculo con matricula "+vm.getMatricula());
+				
+				if (vehiculo instanceof Coche) {
+					Coche coche = (Coche)vehiculo;
+					boolean hayPlazasLibres=false;
+					for (int i = 0; i < plazasCoches.length; i++) {
+						if (plazasCoches[i]==null) {
+							plazasCoches[i]=coche;
+							System.out.println("Aparcado el coche "+coche);
+							hayPlazasLibres=true;
+						}
+					}
+					if(!hayPlazasLibres) {
+						System.out.println("No hay plazas libres para el coche" +coche);
+					}
+				}else if (vehiculo instanceof Moto) {
+					Moto moto = (Moto)vehiculo;
+					boolean hayPlazasLibres=false;
+					if (moto instanceof SideCar &&  ((SideCar)moto).getTamanio()>100) {
+						System.out.println("El sidecar no cabe en la plaza");
+					}else {
+						for (int i = 0; i < plazasMotos.length; i++) {
+							if (plazasMotos[i]==null) {
+								plazasMotos[i]=moto;
+								System.out.println("Aparcada la moto "+moto);
+								hayPlazasLibres=true;
+							}
+						}
+					}
+					if(!hayPlazasLibres) {
+						System.out.println("No hay plazas libres para la moto" +moto);
+					}
+				}
+				
 			}else {
 				Bicicleta bici = (Bicicleta)vehiculo;
 				System.out.println("Aparcando bici"+bici.getMarca());
