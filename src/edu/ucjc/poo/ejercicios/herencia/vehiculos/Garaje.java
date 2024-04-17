@@ -46,6 +46,7 @@ public class Garaje {
 							plazasCoches[i]=coche;
 							System.out.println("Aparcado el coche "+coche);
 							hayPlazasLibres=true;
+							break;
 						}
 					}
 					if(!hayPlazasLibres) {
@@ -62,6 +63,7 @@ public class Garaje {
 								plazasMotos[i]=moto;
 								System.out.println("Aparcada la moto "+moto);
 								hayPlazasLibres=true;
+								break;
 							}
 						}
 					}
@@ -81,6 +83,7 @@ public class Garaje {
 						System.out.println("Aparcada la bici "+bici.getMarca() + 
 								"con "+bici.getNumMarchas() + " marchas ");
 						hayPlazasLibres=true;
+						break;
 					}
 				}
 				if(!hayPlazasLibres) {
