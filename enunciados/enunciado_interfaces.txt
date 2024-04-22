@@ -1,0 +1,19 @@
+Crear las interfaces
+===================================
+    Interfaz Insertable metodo insert()
+    Interfaz Empleable metodo fichar()
+Crear las clases
+===================================
+Clase Persona
+    dni, nombre
+Clase Empleado
+    id, antiguedad
+Clase Ordenador
+    marca, modelo
+
+Todas las clases pueden llamar al método insert
+Solo los empleados puede fichar
+
+Clase con main ()
+    crear 1 objeto de cada tipo y crear un método para poder llamar al método insert de cada objeto
+    otro metodo para poner a fichar solo a los empleados
