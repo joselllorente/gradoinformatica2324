@@ -1,12 +1,16 @@
 package edu.ucjc.poo.ejercicios.herencia;
 
-public class Bateria extends Instrumento {
+import edu.ucjc.poo.ejercicios.herencia.interfaces.Interfaz1;
+
+public final class Bateria extends Instrumento {
 
 	private int numTimbales;
 	private int numPlatos;
+	private final int NUM=9;
 
 	public Bateria(String nombre, String tipo, double precio, String marca) {
 		super(nombre, tipo, precio, marca);
+		int result = Interfaz1.NUMERO+10;
 		// TODO Auto-generated constructor stub
 	}
 

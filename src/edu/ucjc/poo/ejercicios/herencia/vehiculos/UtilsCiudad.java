@@ -8,7 +8,7 @@ public class UtilsCiudad {
 		Coche coche3 = new CocheElectrico("marca3", "modelo3", 2022, "8892-HJD", 4, "Hibrido", 90);
 		
 		Moto moto1 = new Moto("marca1","modelo",2018,"1234-HJD",1500);
-		Moto moto2 = new SideCar("marca1","modelo",2018,"1234-HJD",90);
+		Moto moto2 = new SideCar("marca1","modelo",2018,"4522-HJD",120);
 		
 		Bicicleta bici1 = new Bicicleta("marcaBici1","modeloBici1",2020);
 		Bicicleta bici2 = new Bicicleta("marcaBici2","modeloBici2",2022);
