@@ -1,6 +1,6 @@
 package edu.ucjc.poo.ejercicios.herencia;
 
-import edu.ucjc.poo.ejercicios.herencia.interfaces.Interfaz1;
+import edu.ucjc.poo.herencia.interfaces.Interfaz1;
 
 public final class Bateria extends Instrumento {
 

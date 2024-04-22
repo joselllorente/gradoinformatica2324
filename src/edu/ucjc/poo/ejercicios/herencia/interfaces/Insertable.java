@@ -1,7 +1,6 @@
 package edu.ucjc.poo.ejercicios.herencia.interfaces;
 
-public interface Interfaz2 {
+public interface Insertable {
 
-	public void metodo3 ();
-	
+	void insert();
 }

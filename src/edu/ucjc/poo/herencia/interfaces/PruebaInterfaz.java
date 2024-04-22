@@ -1,4 +1,4 @@
-package edu.ucjc.poo.ejercicios.herencia.interfaces;
+package edu.ucjc.poo.herencia.interfaces;
 
 import edu.ucjc.poo.ejercicios.herencia.vehiculos.Vehiculo;
 
