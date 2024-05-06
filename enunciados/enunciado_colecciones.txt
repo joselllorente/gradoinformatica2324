@@ -1,0 +1,13 @@
+CocheF1
+    numero
+    nombrePiloto
+    escuderia
+    patrocinadores List<String>
+    velMaxima 300
+    correr() --> "Corriendo a " como mucho su vel maxima
+CarreraF1
+    main ()
+        3 coches
+Método para Mostrar la información de todos los coches
+Método para poner a todos los coches a correr
+Método que calcule la velMedia de todos los coches que tengan como patrocinador Red Bull
