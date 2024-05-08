@@ -2,7 +2,9 @@ package edu.ucjc.colecciones.ejercicios;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CarreraF1 {
 
@@ -24,8 +26,14 @@ public class CarreraF1 {
 		CarreraF1 cf1 = new CarreraF1();
 		
 		List<CocheF1> coches = Arrays.asList(coche2,coche3,coche1);
-		cf1.muestraInfoCoches(coches);
-		cf1.correrCoches(coches);
+//		cf1.muestraInfoCoches(coches);
+//		cf1.correrCoches(coches);
+		
+		Map <String,List<CocheF1>> cochesPatrocinador = new  HashMap();
+		cochesPatrocinador.put("Red Bull",Arrays.asList(coche3,coche2));
+		cochesPatrocinador.put("Otros",Arrays.asList(coche1));
+		
+		cf1.mediaPorPatrocinador(cochesPatrocinador,"Otros");
 		
 	}
 	
@@ -40,5 +48,22 @@ public class CarreraF1 {
 			cocheF1.correr();
 		}
 	}
+	
+	private void mediaPorPatrocinador(Map <String,List<CocheF1>> cochesPatrocinador) {
+		mediaPorPatrocinador(cochesPatrocinador,"Red Bull");
+	}
+	
+	private void mediaPorPatrocinador(Map <String,List<CocheF1>> cochesPatrocinador, String patrocinador) {
+		
+		List<CocheF1> coches = cochesPatrocinador.get(patrocinador);
+		double sumaVelocidades=0;
+		for (CocheF1 cocheF1 : coches) {
+			sumaVelocidades += cocheF1.getVelMaxima();
+		}
+		
+		System.out.println("La velocidad media de todos los coches de "
+				+patrocinador + " es " + (sumaVelocidades/coches.size()));
+	}
+	
 
 }
